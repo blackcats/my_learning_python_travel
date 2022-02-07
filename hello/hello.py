@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 import sys
 
-name = ""
+name = "xx"
 
 print("Hello, what's your name?")
-print("name: ", end='')
-name = sys.stdin.readline
+print("My name is", end=' ', flush=True)
+#print("name: ")
+name = sys.stdin.readline()
 
-print("Hello ", name)
+print("Hello", name, ".", end='')
